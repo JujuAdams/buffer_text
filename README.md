@@ -2,4 +2,4 @@
 
 ### @jujuadams
 
-A complete replacement for the old file_text_* functions in GameMaker. Can be run in asynchronous mode for compatibility with consoles. Behaviour is identical to existing native functions (including the bugs...).
+A complete replacement for the old file_text_* functions in GameMaker. Can be run in asynchronous mode for compatibility with consoles. Behaviour is otherwise identical to existing native functions (including the bugs...).
