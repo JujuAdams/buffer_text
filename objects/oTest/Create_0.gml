@@ -1,0 +1,37 @@
+buffer_text_init(false);
+
+var _file = file_text_open_write("file.txt");
+file_text_write_real(_file, 42);
+file_text_writeln(_file);
+file_text_write_real(_file, 1);
+file_text_write_real(_file, 2);
+file_text_write_real(_file, 3);
+file_text_writeln(_file);
+file_text_write_string(_file, "hello world");
+file_text_writeln(_file);
+file_text_write_string(_file, "foo");
+file_text_write_string(_file, "bar");
+file_text_writeln(_file);
+file_text_write_string(_file, "hello");
+file_text_write_real(_file, 6.78);
+file_text_write_string(_file, "world");
+file_text_writeln(_file);
+file_text_close(_file);
+
+var _file = buffer_text_open_write("buffer.txt");
+buffer_text_write_real(_file, 42);
+buffer_text_writeln(_file);
+buffer_text_write_real(_file, 1);
+buffer_text_write_real(_file, 2);
+buffer_text_write_real(_file, 3);
+buffer_text_writeln(_file);
+buffer_text_write_string(_file, "hello world");
+buffer_text_writeln(_file);
+buffer_text_write_string(_file, "foo");
+buffer_text_write_string(_file, "bar");
+buffer_text_writeln(_file);
+buffer_text_write_string(_file, "hello");
+buffer_text_write_real(_file, 6.78);
+buffer_text_write_string(_file, "world");
+buffer_text_writeln(_file);
+buffer_text_close(_file, example_callback_write);
